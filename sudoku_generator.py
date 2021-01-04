@@ -89,7 +89,6 @@ def generator():
                 sqa = square(sudoku,y,x)
                 #Donne les valeurs référé aux coordonnées
                 sqa_val = valuesquare(sudoku,sqa)
-                
                 #Donne les valeurs possible pour chaque et donne les valeurs commune à chaque qui sont les valeurs utilisable    
                 num = possible(check(col),check(lig),check(sqa_val))
                 #Parmi les valeur possible en choisi une aléatoire
@@ -99,6 +98,7 @@ def generator():
                 
             #Si on rencontre une erreur alors
             except ValueError:
+                
                 #On essaye un bout de code dangereux aussi
                 try:
                     #Si la dernière case n'est pas complété alors
@@ -150,3 +150,4 @@ def generate(n):
 
 
     
+
